@@ -53,7 +53,7 @@ function App() {
             <p>
               <img
                 className="img_profil"
-                src="src/assets/profil.jpg"
+                src="./assets/profil.jpg"
                 alt="image_profil_annelise"
               />
               Anne-Lise Héban <br />
