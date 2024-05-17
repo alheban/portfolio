@@ -34,7 +34,7 @@ export function Header() {
             }`}
           >
             <li className="navbar__item">
-              <a href="/" onClick={handleLinkClick}>À propos</a>
+              <a href=".app" onClick={handleLinkClick}>À propos</a>
             </li>
             <li className="navbar__item">
               <a href="#zone_comptences" className="navbar__link" onClick={handleLinkClick}>
