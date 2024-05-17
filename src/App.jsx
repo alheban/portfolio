@@ -17,6 +17,10 @@ import Projet from "./Projet";
 import Contact from "./Contact";
 
 function App() {
+
+  // const basename = import.meta.env.MODE === "production" ? "/portfolio" : "";
+  // basename={basename}
+
   const { isLightMode, toggleMode } = useTheme();
 
   useEffect(() => {
