@@ -38,7 +38,7 @@ function Projet() {
       </div>
     </div>
     <div className="projet__imag">
-      <img src="src/assets/test.webp"></img>
+      <img src="./assets/test.webp"></img>
     </div>
   </div>
   )
