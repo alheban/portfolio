@@ -25,7 +25,7 @@ export function Header() {
       <nav className={`navbar ${isLightMode ? "light-mode" : "dark-mode"}`}>
         <div className="navbar__logo">
           <img src={logoAH} alt="logoAH" />
-          <h1>Anne.Lise H</h1>
+          <a href="#"><h1>Anne.Lise H</h1></a>
         </div>
         <div className="container_nav">
           <ul
@@ -34,7 +34,7 @@ export function Header() {
             }`}
           >
             <li className="navbar__item">
-              <a href=".app" onClick={handleLinkClick}>À propos</a>
+              <a href="#zone_qui" onClick={handleLinkClick}>À propos</a>
             </li>
             <li className="navbar__item">
               <a href="#zone_comptences" className="navbar__link" onClick={handleLinkClick}>
