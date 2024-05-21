@@ -1,18 +1,8 @@
-import React, { useEffect } from "react";
-import { useTheme } from "./ThemeContext";
+import React from "react";
 function Contact() {
-    const { isLightMode, toggleMode } = useTheme();
-
-    useEffect(() => {
-      if (isLightMode) {
-        document.body.classList.add("light-mode");
-      } else {
-        document.body.classList.remove("light-mode");
-      }
-    }, [isLightMode]);
     return (
         <>
-        <div className={`contact ${isLightMode ? "light-mode-img" : "dark-mode-img"}`}>
+        <div className="contact" >
         
             <a href="https://www.github.com" target="_blank">
             <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Github">
@@ -27,7 +17,7 @@ function Contact() {
             </a>
             <a href="mailto:example@gmail.com">
             <svg width="37" height="28" viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Gmail">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2.52271 27.7571H8.40918V13.4617L18.5 21.0298L28.5911 13.4617V27.7571H34.4775C35.8733 27.7571 37.0002 26.6261 37.0002 25.2344V3.79126C37.0002 0.671505 33.439 -1.10706 30.9456 0.763973L28.5911 2.5299L18.5 10.0981L8.40918 2.5299L6.05444 0.763973C3.55713 -1.10706 0 0.671505 0 3.79126V25.2344C0 26.6303 1.1311 27.7571 2.52271 27.7571Z" fill="white"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M2.52271 27.7571H8.40918V13.4617L18.5 21.0298L28.5911 13.4617V27.7571H34.4775C35.8733 27.7571 37.0002 26.6261 37.0002 25.2344V3.79126C37.0002 0.671505 33.439 -1.10706 30.9456 0.763973L28.5911 2.5299L18.5 10.0981L8.40918 2.5299L6.05444 0.763973C3.55713 -1.10706 0 0.671505 0 3.79126V25.2344C0 26.6303 1.1311 27.7571 2.52271 27.7571Z" fill="white"/>
 </svg>
 
             </a>

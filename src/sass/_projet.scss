@@ -36,7 +36,12 @@
   .title__projets {
     width:100%;
   }
-
+  .tag {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+  }
+  
   @media (min-width: 769px) {
     .title__projets {
       height: 60px;

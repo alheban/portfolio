@@ -1,0 +1,157 @@
+[
+    {
+      "id": "1",
+      "title": "Argentbank",
+      "description": "Dans le cadre du développement d'une application bancaire avec React, j'ai eu l'opportunité de m'immerger dans une expérience de développement complet. En utilisant Redux pour gérer l'état de l'application, j'ai pu créer une interface utilisateur interactive et réactive. L'intégration avec le back-end a été un élément crucial de ce projet, où j'ai utilisé Node.js pour exécuter le code JavaScript côté serveur. Cela a permis une communication fluide entre le front-end et le back-end, assurant ainsi la synchronisation des données et des actions de l'utilisateur. En parallèle, j'ai utilisé Swagger pour documenter méticuleusement les points d'accès de l'API, facilitant ainsi la collaboration et la maintenance du projet. Cette expérience m'a non seulement permis de consolider mes compétences en développement web, mais aussi de comprendre l'importance d'une approche cohérente et bien documentée pour garantir le succès d'un projet.",
+      "image": "./assets/test.webp",
+      "liens": [
+        {"type": "github", "url": "https://github.com/alheban/argentbank_p11"}
+      ],
+      "tags": [
+        {"name": "HTML5", "image": "./assets/html5.svg"},
+        {"name": "CSS3", "image": "./assets/css3.svg"},
+        {"name": "Git", "image": "./assets/git.svg"},
+        {"name": "figma", "image": "./assets/figma.svg"},
+        {"name": "javascript", "image": "./assets/javascript.svg"},
+        {"name": "react", "image": "./assets/react.svg"},
+        {"name": "redux", "image": "./assets/redux.svg"}
+      ]
+    },
+    {
+        "id": "2",
+        "title": "Nina Carducci",
+        "description":"J'ai optimisé le site de Nina Carducci, photographe, pour améliorer son SEO et ses performances. J'ai identifié des problèmes de lenteur de chargement et proposé des solutions, incluant l'optimisation des images et du code. Après une discussion détaillée, Nina a confirmé les tâches : améliorer les performances globales et le SEO, mettre en place le référencement local, ajouter des métas pour les réseaux sociaux, et améliorer l'accessibilité. J'ai utilisé des outils comme Lighthouse et GTMetrix pour évaluer et améliorer le site, produisant un rapport final détaillant les modifications et leurs impacts.",
+        "image": "./assets/test.webp",
+        "liens": [
+          {"type": "github", "url": "https://github.com/alheban/ninacarducci_P9"},
+          {"type": "website", "url": "https://alheban.github.io/ninacarducci_P9/"}
+        ],
+        "tags": [
+          {"name": "HTML5", "image": "./assets/html5.svg"},
+          {"name": "CSS3", "image": "./assets/css3.svg"},
+          {"name": "Git", "image": "./assets/git.svg"},
+          {"name": "figma", "image": "./assets/figma.svg"},
+          {"name": "javascript", "image": "./assets/javascript.svg"}
+
+
+  
+        ]
+      },
+    {
+      "id": "3",
+      "title": "Booki",
+      "description":"Projet de développement web pour une start-up de voyage. Mon rôle était d'intégrer l'interface du site avec HTML et CSS. Collaboration avec l'équipe, notamment la CTO Sarah et l'UI designer Loïc. Le projet consistait à créer la page d'accueil, permettant aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. En utilisant la maquette comme guide, j'ai travaillé sur la structure HTML et les styles CSS. J'ai veillé à ce que le site soit responsive. Pour cela,j'ai suivi les bonnes pratiques de développement web, en veillant à utiliser des mesures relatives plutôt que des mesures absolues.",
+      "image": "./assets/test.webp",
+      "liens": [
+        {"type": "github", "url": "https://alheban.github.io/booki/"}
+      ],
+      "tags": [
+        {"name": "HTML5", "image": "./assets/html5.svg"},
+        {"name": "CSS3", "image": "./assets/css3.svg"},
+        {"name": "Git", "image": "./assets/git.svg"},
+        {"name": "Git", "image": "./assets/figma.svg"}
+
+      ]
+    },
+    {
+        "id": "4",
+        "title": "Ohmyfood",
+        "description":"Un site mobile first révolutionnaire pour les passionnés de gastronomie. Il permet aux clients d'explorer les menus des restaurants gastronomiques, de réserver leur table et même de composer leur repas à l'avance pour éviter les temps d'attente. J'ai veillé à ce que le site offre une expérience utilisateur fluide et agréable sur toutes les plateformes, que ce soit sur mobile, tablette ou desktop. Les animations soignées ajoutent une touche d'interactivité, tandis que l'utilisation de SASS pour les styles assure une organisation claire et efficace du code. Hébergé sur GitHub, ce projet est prêt à être partagé avec le monde entier.",
+        "image": "./assets/test.webp",
+        "liens": [
+          {"type": "github", "url": "https://github.com/alheban/projet_04"},
+          {"type": "website", "url": "https://alheban.github.io/projet_04/"}
+        ],
+        "tags": [
+          {"name": "HTML5", "image": "./assets/html5.svg"},
+          {"name": "CSS3", "image": "./assets/css3.svg"},
+          {"name": "Git", "image": "./assets/git.svg"},
+          {"name": "figma", "image": "./assets/figma.svg"},
+          {"name": "sass", "image": "./assets/sass.svg"}
+  
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Print-it",
+        "description":"J'ai récemment eu l'opportunité de dynamiser le site Web statique de Print it, une imprimerie familiale. Pour ce faire, j'ai mis en place un carrousel interactif sur la page d'accueil. Ce carrousel, réalisé avec HTML, CSS et JavaScript, présente quatre visuels clés et permet une navigation fluide grâce à des flèches de gauche et de droite, ainsi que des points indicateurs. J'ai modernisé le code en utilisant la fonction forEach, offrant ainsi une gestion plus élégante des éléments du carrousel. Ce projet a permis de donner une touche de dynamisme au site de Print it et de renforcer son attrait pour les visiteurs.",
+        "image": "./assets/test.webp",
+        "liens": [
+          {"type": "github", "url": "https://github.com/alheban/Print-it-JS"},
+          {"type": "website", "url": "https://alheban.github.io/Print-it-JS/"}
+        ],
+        "tags": [
+          {"name": "HTML5", "image": "./assets/html5.svg"},
+          {"name": "CSS3", "image": "./assets/css3.svg"},
+          {"name": "Git", "image": "./assets/git.svg"},
+          {"name": "javascript", "image": "./assets/javascript.svg"}
+
+
+  
+        ]
+      },
+      {
+        "id": "6",
+        "title": "Sophie Bluel",
+        "description":"J'ai dynamisé le site web de l'architecte d'intérieur Sophie Bluel en ajoutant des fonctionnalités telles que la présentation de ses travaux, une page de connexion admin, et une modale pour télécharger des médias. Ce projet a consolidé mes compétences en développement Front-End et en communication avec les API.",
+        "image": "./assets/test.webp",
+        "liens": [
+          {"type": "github", "url": "https://github.com/alheban/Portfolio-architecte-sophie-bluel"}
+        ],
+        "tags": [
+          {"name": "HTML5", "image": "./assets/html5.svg"},
+          {"name": "CSS3", "image": "./assets/css3.svg"},
+          {"name": "Git", "image": "./assets/git.svg"},
+          {"name": "figma", "image": "./assets/figma.svg"},
+          {"name": "javascript", "image": "./assets/javascript.svg"}
+
+
+  
+        ]
+      },
+      
+      {
+        "id": "7",
+        "title": "Kasa",
+        "description":"En tant que développeur front-end freelance pour Kasa, j'ai participé à la refonte complète de leur site web, passant d'ASP.NET à une stack JavaScript moderne avec NodeJS et React. J'ai initié le projet React, développé l'application en suivant les maquettes Figma, et implémenté des fonctionnalités clés telles que la galerie d'images et les menus déroulants. Ce projet a consolidé mes compétences en développement front-end et m'a permis de contribuer efficacement à un projet d'envergure pour un leader de la location d'appartements entre particuliers en France.",
+        "image": "./assets/test.webp",
+        "liens": [
+          {"type": "github", "url": "https://github.com/alheban/kasa_P8"}
+        ],
+        "tags": [
+          {"name": "HTML5", "image": "./assets/html5.svg"},
+          {"name": "CSS3", "image": "./assets/css3.svg"},
+          {"name": "Git", "image": "./assets/git.svg"},
+          {"name": "figma", "image": "./assets/figma.svg"},
+          {"name": "javascript", "image": "./assets/javascript.svg"},
+          {"name": "react", "image": "./assets/react.svg"}
+
+
+  
+        ]
+      },
+      {
+        "id": "8",
+        "title": "724events",
+        "description":"J'ai collaboré avec l'agence événementielle 724events pour finaliser leur site web one-page. Ayant résolu avec succès les problèmes et les bugs existants, j'ai également complété le cahier de recette pour garantir la fiabilité du site. En mettant en place des tests unitaires, j'ai vérifié minutieusement le bon fonctionnement de chaque composant et fonctionnalité. Grâce à l'utilisation judicieuse d'outils tels que Yarn, Node.js et GitHub, j'ai pu livrer un site parfaitement fonctionnel dans les délais impartis. Ce projet illustre ma capacité à relever des défis complexes et à fournir des résultats de haute qualité dans un environnement professionnel exigeant.",
+        "image": "./assets/test.webp",
+        "liens": [
+          {"type": "github", "url": "https://github.com/alheban/alheban-724events_projet10"}
+        ],
+        "tags": [
+          {"name": "HTML5", "image": "./assets/html5.svg"},
+          {"name": "CSS3", "image": "./assets/css3.svg"},
+          {"name": "Git", "image": "./assets/git.svg"},
+          {"name": "figma", "image": "./assets/figma.svg"},
+          {"name": "javascript", "image": "./assets/javascript.svg"},
+          {"name": "react", "image": "./assets/react.svg"}
+
+
+  
+        ]
+      }
+      
+
+
+  ]
+  

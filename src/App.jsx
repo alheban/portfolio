@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "./ThemeContext";
 import Header from "./Header";
 import Footer from "./Footer";
-import logoAH from "./assets/logo_small.svg";
+import Contact from "./Contact";
+import Projet from "./Projet";
+import projetData from "./data/projets.json"; // Assurez-vous que le chemin est correct
+
 import logofigma from "./assets/figma.svg";
 import logohtml5 from "./assets/html5.svg";
 import logocss3 from "./assets/css3.svg";
@@ -13,14 +16,8 @@ import logovscode from "./assets/vscode.svg";
 import logoadobe from "./assets/adobe.svg";
 import logoredux from "./assets/redux.svg";
 import logosass from "./assets/sass.svg";
-import Projet from "./Projet";
-import Contact from "./Contact";
 
 function App() {
-
-  // const basename = import.meta.env.MODE === "production" ? "/portfolio" : "";
-  // basename={basename}
-
   const { isLightMode, toggleMode } = useTheme();
 
   useEffect(() => {
@@ -39,10 +36,9 @@ function App() {
           <h2>
             Développeuse front-end
             <br />& Designer ux/ ui
-            
           </h2>
           <Contact />
-            <div className="arrow"></div>
+          <div className="arrow"></div>
         </div>
       </section>
 
@@ -64,12 +60,12 @@ function App() {
               </span>{" "}
               Chaque ligne de code que j'écris est alimentée par mon désir{" "}
               <span className="text_color">
-                d'innover et de rendre les interfaces à la fois attrayantes et
-                fonctionnelles.
+                d'innover et de rendre les interfaces à la fois attrayantes
+                et fonctionnelles.
               </span>{" "}
               Je crois fermement que la clé d'une conception efficace réside
-              dans une empathie profonde envers les utilisateurs, et c'est cette
-              conviction qui guide mon travail au quotidien. <br />
+              dans une empathie profonde envers les utilisateurs, et c'est
+              cette conviction qui guide mon travail au quotidien. <br />
               Mon objectif est clair : concevoir des interfaces alliant
               intuitivité, esthétique, fonctionnalité et performance.
             </p>
@@ -136,8 +132,8 @@ function App() {
             <div className="logo"></div>
             <div className="logo">
               <p>
-                ▸ Référencement SEO <br></br>▸ Accessibilité <br></br> ▸ Méthode
-                agile
+                ▸ Référencement SEO <br></br>▸ Accessibilité <br></br> ▸
+                Méthode agile
               </p>
             </div>
           </div>
@@ -151,9 +147,9 @@ function App() {
         >
           <h3 className="title__projets">Projets</h3>
           <div className="list__projets">
-            <Projet />
-            <Projet />
-            <Projet />
+            {projetData.map((projet, index) => (
+              <Projet key={index} projet={projet} />
+            ))}
           </div>
         </div>
       </section>

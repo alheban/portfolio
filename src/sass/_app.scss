@@ -84,7 +84,9 @@ button {
 .light-mode .contact svg path{
   fill: black; /* Changer la couleur au survol en violet */
 }
-.dark-mode .logo img {
+.dark-mode .logo img,
+.dark-mode .projet__tags img
+{
   filter: invert(100%);
 }
 
@@ -93,6 +95,17 @@ button {
 .dark-mode .header {
   background-color: var(--darkmodecolor);
   color: white;
+}
+.dark-mode-tag{
+  color: white;
+}
+.light-mode-tag {
+  color: var(--darkmodecolor);
+}
+
+
+.light-mode-img {
+  filter: invert(100%);
 }
 // -------------ajout navbar--------
 
@@ -360,3 +373,61 @@ p {
   fill: #187eff; /* Changer la couleur au survol en violet */
 }
 
+
+
+
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.github-button:hover {
+  border-color: #555;
+}
+
+.github-button span {
+  margin-right: 8px; /* Ajout d'une marge à droite du texte */
+}
+
+.github-button img {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px; /* Ajout d'une marge à gauche de l'image */
+}
+
+.github-button .light-mode  {
+  color: white;
+  background-color: #1a1a1a;
+}
+
+.github-button:hover .light-mode  {
+  color: #000;
+}
+
+.light-mode .github-button img {
+  filter: invert(1);
+}
+
+.github-button .dark-mode  {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.github-button:hover .dark-mode  {
+  color: #ddd;
+}
+
+.liens{
+  display: flex;
+
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
