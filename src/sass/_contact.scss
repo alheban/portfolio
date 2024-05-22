@@ -1,0 +1,17 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+  }
+  .contact svg {
+    padding: 0 20px;
+  }
+
+
+// .message_contact{
+//   display: flex;
+//   font-size: 9px;
+// }
+.contact a:hover svg path {
+  fill: #187eff; /* Changer la couleur au survol en violet */
+}

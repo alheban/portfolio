@@ -44,6 +44,50 @@ button {
 
 .app {
   color: var(--blanc);
+  // ------------- background point--------
+
+  .fond_dots {
+    display: flex;
+    height: 502px;
+    padding-top: 60px;
+    z-index: 0;
+    background: radial-gradient(circle, #343434 1px, transparent 1px);
+    background-size: 22px 22px;
+    flex-direction: column;
+    justify-content: center;
+    .arrow {
+      position: absolute;
+      left: 50%;
+      top: 500px;
+      transform: translateX(-50%);
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      border-top: 24px solid #187eff;
+    }
+  }
+  .fond_dots_light {
+    // position: relative;
+    // width: 100%;
+    height: 500px;
+    // z-index: 0; /* Assurez-vous que le fond est derrière le titre */
+    background: radial-gradient(
+      circle,
+      rgb(217, 217, 217) 1px,
+      transparent 1px
+    );
+    background-size: 22px 22px; /* Taille des points */
+  }
+
+  // .fond_dots::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+
+  //   z-index: -1; /* Assurez-vous que le fond est derrière le titre */
+  // }
 }
 
 .light-mode,
@@ -71,22 +115,17 @@ button {
 .dark-mode .projet {
   background-color: #1a1a1a;
   border-bottom: 1px solid #717171; /* Bordure pointillée noire */
-
 }
 .light-mode .projet {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-bottom: 1px solid #dfdfdf; /* Bordure pointillée noire */
-
 }
 
-
-
-.light-mode .contact svg path{
+.light-mode .contact svg path {
   fill: black; /* Changer la couleur au survol en violet */
 }
 .dark-mode .logo img,
-.dark-mode .projet__tags img
-{
+.dark-mode .projet__tags img {
   filter: invert(100%);
 }
 
@@ -96,13 +135,12 @@ button {
   background-color: var(--darkmodecolor);
   color: white;
 }
-.dark-mode-tag{
-  color: white;
-}
-.light-mode-tag {
-  color: var(--darkmodecolor);
-}
-
+// .dark-mode-tag{
+//   color: white;
+// }
+// .light-mode-tag {
+//   color: var(--darkmodecolor);
+// }
 
 .light-mode-img {
   filter: invert(100%);
@@ -129,37 +167,6 @@ li {
   padding: 10px;
 }
 
-// ------------- background point--------
-
-.fond_dots {
-  display: flex;
-  height: 502px;
-  padding-top: 60px;
-  z-index: 0;
-  background: radial-gradient(circle, #343434 1px, transparent 1px);
-  background-size: 22px 22px;
-  flex-direction: column;
-  justify-content: center;
-}
-.fond_dots_light {
-  // position: relative;
-  // width: 100%;
-  height: 500px;
-  // z-index: 0; /* Assurez-vous que le fond est derrière le titre */
-  background: radial-gradient(circle, rgb(217, 217, 217) 1px, transparent 1px);
-  background-size: 22px 22px; /* Taille des points */
-}
-
-// .fond_dots::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-
-//   z-index: -1; /* Assurez-vous que le fond est derrière le titre */
-// }
 h1 {
   font-family: Nunito;
   font-size: 35px;
@@ -190,79 +197,52 @@ p {
   margin: 0;
   padding: 0;
 }
-.arrow {
-  position: absolute;
-  left: 50%;
-  top: 500px;
-  transform: translateX(-50%);
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 24px solid #187eff;
-}
 
 // ------------- about-section--------
 .container_section {
   padding: 60px 20px 0;
+  .section__title {
+    border-top: 1px solid #454545;
+    border-left: 1px solid #454545;
+    border-right: 1px solid #454545;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+  .section_contenu {
+    border: 1px solid #454545;
+    padding: 20px;
+    .img_profil {
+      display: inline-block; /* Assurez-vous que l'image est un élément en ligne */
+      vertical-align: middle; /* Alignez l'image verticalement au centre par rapport au texte */
+      border-radius: 50%;
+      padding: 10px;
+      width: 45px;
+    }
+    .text_color {
+      color: #187eff;
+      font-weight: bold;
+    }
+  }
+  .container__expertise {
+    display: flex;
+    justify-content: space-between;
+    .expertise {
+      border: 1px solid #454545;
+      text-align: center;
+      padding: 5px;
+      font-size: 10px;
+      text-transform: uppercase;
+      flex-grow: 1;
+      box-sizing: border-box;
+      width: 115px;
+    }
+  }
 }
-
-.section__title {
-  border-top: 1px solid #454545;
-  border-left: 1px solid #454545;
-  border-right: 1px solid #454545;
-  height: 60px;
-  line-height: 60px;
-  text-align: left;
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
-  width: auto;
-}
-
-.section_contenu {
-  border: 1px solid #454545;
-  padding: 20px;
-}
-
-.text_color {
-  color: #187eff;
-  font-weight: bold;
-}
-
-.img_profil {
-  display: inline-block; /* Assurez-vous que l'image est un élément en ligne */
-  vertical-align: middle; /* Alignez l'image verticalement au centre par rapport au texte */
-  border-radius: 50%;
-  padding: 10px;
-  width: 45px;
-}
-.message_contact{
-  display: flex;
-  font-size: 9px;
-}
-.contact {
-  display: flex;
-  justify-content: center;
-  padding: 2% 0;
-}
-.contact svg {
-  padding: 0 20px;
-}
-
-.container__expertise {
-  display: flex;
-  justify-content: space-between;
-}
-.expertise {
-  border: 1px solid #454545;
-  text-align: center;
-  padding: 5px;
-  font-size: 9px;
-  text-transform: uppercase;
-  flex-grow: 1;
-  box-sizing: border-box;
-  width: 115px;
-}
-
 .container__expertise .expertise:nth-child(2) {
   border-left: none;
 }
@@ -279,20 +259,19 @@ p {
   padding: 1px; /* Ajoutez un padding pour compenser la bordure */
   align-items: center;
   justify-items: center;
+  .logo {
+    height: 115px;
+    border: 1px solid #454545;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo:nth-last-child(-n + 1) {
+    grid-column: span 2; /* Les deux derniers éléments occupent deux colonnes */
+  }
 }
-.logo {
-  height: 115px;
-  border: 1px solid #454545;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo:nth-last-child(-n + 1) {
-  grid-column: span 2; /* Les deux derniers éléments occupent deux colonnes */
-}
-
 
 @media (min-width: 769px) {
   h2 {
@@ -303,6 +282,16 @@ p {
     flex-direction: row;
     height: auto;
     justify-content: center;
+    .section__title {
+      border-top: 1px solid #454545;
+      border-left: 1px solid #454545;
+      border-bottom: 1px solid #454545;
+      border-right: none;
+      height: auto;
+      padding: 20px;
+      width: 15%;
+      margin-bottom: 0;
+    }
   }
 
   .container__expertise {
@@ -310,16 +299,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
   }
-  .section__title {
-    border-top: 1px solid #454545;
-    border-left: 1px solid #454545;
-    border-bottom: 1px solid #454545;
-    border-right: none;
-    height: auto;
-    padding: 20px;
-    width: 15%;
-    margin-bottom: 0;
-  }
+
   .section_contenu {
     height: auto;
     width: 40%;
@@ -339,7 +319,7 @@ p {
     width: calc(40% + 155px);
     display: grid;
     grid-template-columns: repeat(
-      7,
+      6,
       1fr
     ); /* Quatre colonnes de largeur égale */
     grid-auto-rows: 115px; /* Utiliser la hauteur automatique en fonction du contenu */
@@ -349,85 +329,67 @@ p {
     align-items: center;
     justify-items: center;
   }
-  .title__projet {
-    height: 60px;
-    line-height: 60px;
-    text-align: left;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-  }
 
-  .container_projet {
-    padding: 60px 0;
-  }
-  .list__projets {
-    width: calc(55% + 205px);
-  }
-}
-
-
-.contact a:hover svg path {
-  fill: #187eff; /* Changer la couleur au survol en violet */
-}
-
-
-
-
-
-.github-button {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 8px 16px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  transition: border-color 0.3s;
-}
-
-.github-button:hover {
-  border-color: #555;
-}
-
-.github-button span {
-  margin-right: 8px; /* Ajout d'une marge à droite du texte */
-}
-
-.github-button img {
-  width: 20px;
-  height: 20px;
-  margin-left: 8px; /* Ajout d'une marge à gauche de l'image */
-}
-
-.github-button .light-mode  {
-  color: white;
-  background-color: #1a1a1a;
-}
-
-.github-button:hover .light-mode  {
-  color: #000;
 }
 
 .light-mode .github-button img {
   filter: invert(1);
 }
 
-.github-button .dark-mode  {
-  color: #fff;
-  background-color: #1a1a1a;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container_section {
+    .section__title {
+      width: 20%;
+    }
+  }
+
+  .container__expertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section_contenu {
+    height: auto;
+    width: 40%;
+  }
+  .container__expertise .expertise:first-child {
+    border-left: none;
+    border-bottom: none;
+  }
+  .container__expertise .expertise:nth-child(2) {
+    border-left: none;
+    border-bottom: none;
+  }
+  .container__expertise .expertise:last-child {
+    border-left: none;
+  }
+  .container__logos {
+    // width: calc(40% + 155px);
+    display: grid;
+    grid-template-columns: repeat(
+      5,
+      1fr
+    ); /* Quatre colonnes de largeur égale */
+    grid-auto-rows: 115px; /* Utiliser la hauteur automatique en fonction du contenu */
+    gap: 1px; /* Écart entre les carrés pour représenter la bordure */
+    height: auto; /* Ajustez la hauteur en fonction du contenu */
+    padding: 1px; /* Ajoutez un padding pour compenser la bordure */
+    align-items: center;
+    justify-items: center;
+  }
+  .container_projet {
+    padding: 60px 0;
+  }
 }
 
-.github-button:hover .dark-mode  {
-  color: #ddd;
-}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container__logos {
+    grid-template-columns: repeat(
+      7,
+      1fr
+    ); /* Quatre colonnes de largeur égale */
 
-.liens{
-  display: flex;
+  }
 
-  align-content: flex-start;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  gap: 10px;
 }

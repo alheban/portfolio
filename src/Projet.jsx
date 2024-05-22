@@ -16,7 +16,9 @@ function Projet({ projet }) {
     <div className={`projet ${isLightMode ? "light-mode" : "dark-mode"}`}>
       <div className="projet__descriptif">
         <h3>{projet.title}</h3>
-        <p>{projet.description}</p>
+        {projet.description.split('\n').map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
         <div className={`projet__tags ${isLightMode ? "light-mode-tag" : "dark-mode-tag"}`}>
           {projet.tags.map((tag, index) => (
             <img key={index} src={tag.image} alt={tag.name} className="tag" />
@@ -24,10 +26,14 @@ function Projet({ projet }) {
         </div>
         <div className="liens">
           {projet.liens.map((lien, index) => (
-            <a key={index} href={lien.url} target="_blank" rel="noopener noreferrer" className="github-button">
-              <span>{lien.type === "github" ? "Lien GitHub" : "Lien Site"}</span>
-              <img src={lien.type === "github" ? "src/assets/github.svg" : "src/assets/website.svg"} alt={lien.type} />
-            </a>
+            <button
+  key={index}
+  onClick={() => window.open(lien.url, "_blank", "noopener,noreferrer")}
+  className="github-button"
+>
+  <span>{lien.type === "github" ? "Lien GitHub" : "Lien Site"}</span>
+  <img src={lien.type === "github" ? "./assets/github.svg" : "./assets/website.svg"} alt={lien.type} />
+</button>
           ))}
         </div>
       </div>
