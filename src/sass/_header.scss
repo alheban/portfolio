@@ -105,7 +105,8 @@ h1{
     left: 0;
     bottom: 0;
     height: 100vh;
-    // padding: 2rem;
+    font-size: xx-large;
+
   }
 
   .menu-icon {
@@ -127,3 +128,8 @@ h1{
 
 
 
+@media (max-width: 320px) {
+  h1{
+    font-size: 22px;
+  }
+}

@@ -168,7 +168,7 @@ li {
 }
 
 h1 {
-  font-family: Nunito;
+  // font-family: Nunito;
   font-size: 35px;
   font-style: normal;
   font-weight: 200;
@@ -176,7 +176,7 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 2.1em;
+  font-size: 2.5em;
   line-height: 1.1;
   // position: relative;
   // z-index: 1;
@@ -185,9 +185,10 @@ h2 {
   background-clip: text;
   color: transparent;
   text-align: center; /* Centrer horizontalement */
-  left: 0;
-  right: 0;
-  top: 50%; /* Positionner au milieu verticalement */
+  // left: 0;
+  // right: 0;
+  padding: 0 23px;
+  // top: 50%; /* Positionner au milieu verticalement */
   transform: translateY(-50%); /* Recentrer verticalement */
 }
 h3 {
@@ -393,3 +394,4 @@ p {
   }
 
 }
+
