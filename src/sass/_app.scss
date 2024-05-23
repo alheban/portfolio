@@ -124,10 +124,24 @@ button {
 .light-mode .contact svg path {
   fill: black; /* Changer la couleur au survol en violet */
 }
-.dark-mode .logo img,
+.dark-mode .logo img{
+    filter: invert(100%);
+  }
+
 .dark-mode .projet__tags img {
   filter: invert(100%);
+  opacity: 50%;
 }
+.dark-mode .projet__tags img:hover{
+  opacity: 100%;
+}
+
+
+
+.light-mode .projet__tags img:hover{
+  opacity: 50%;
+}
+
 
 .dark-mode,
 .dark-mode a,
@@ -135,16 +149,9 @@ button {
   background-color: var(--darkmodecolor);
   color: white;
 }
-// .dark-mode-tag{
-//   color: white;
-// }
-// .light-mode-tag {
-//   color: var(--darkmodecolor);
-// }
 
-.light-mode-img {
-  filter: invert(100%);
-}
+
+
 // -------------ajout navbar--------
 
 a {
