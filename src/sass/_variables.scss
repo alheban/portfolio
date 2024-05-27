@@ -1,9 +1,12 @@
-$color-white: #ff6060;
-$color-secondary: #F6F6F6;
-$color-tertiary: white;
-$color-quaternary:red;
+$color-light: white;
+$color-dark: #0a0a0a;
+$color-tertiary: #4080F0;
+$color-border: #454545;
+$color-borderL: #dfdfdf;
+$color-backgroundD:#1a1a1a;
+$color-backgroundL:#fafafa;
+$color-degrade:linear-gradient(180deg, #4080F0 0%, #bbd9ff 99.99%, #fff 100%);
 
 
-$mobile-max-width: 425px;
-$mobile-min-width: 320px;
-$tablet-max-width:768px;
+
+

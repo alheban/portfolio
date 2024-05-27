@@ -1,4 +1,6 @@
+@import 'variables.scss';
 //------------------projet
+
 .container_projet {
   display: flex;
   justify-content: center;
@@ -43,6 +45,15 @@
     }
   }
 }
+.light-mode .github-button img {
+  filter: invert(1);
+}
+.light-mode .github-button {
+  color: black;
+  background-color: $color-backgroundL;
+}
+
+
 .liens {
   display: flex;
   align-content: flex-start;
@@ -59,8 +70,12 @@
     transition: border-color 0.3s;
   }
 
-  .github-button:hover {
-    border-color: #187eff;
+  .github-button:hover,
+  .github-button:active,
+.github-button:focus {
+  background-color: $color-tertiary;
+    border-color: $color-tertiary;
+
   }
 
   .github-button span {
@@ -73,10 +88,7 @@
     margin-left: 8px; /* Ajout d'une marge à gauche de l'image */
   }
 
-  .github-button .light-mode {
-    color: white;
-    background-color: #1a1a1a;
-  }
+
 }
 @media (min-width: 769px) {
   .container_projet {
@@ -129,6 +141,8 @@
     .list__projets {
       width: calc(62% + 183px);
     }
+
+
   }
 }
 
@@ -143,3 +157,4 @@
   }
 
 }
+

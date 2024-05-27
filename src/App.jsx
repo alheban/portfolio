@@ -144,59 +144,59 @@ function App() {
             <div className="logo">
               <motion.img src={logohtml5} alt="logo html5"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("html5")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo"></div>
 
             <div className="logo">
-              <motion.img src={logocss3} alt="logo  css3"
+              <motion.img src={logocss3} alt="logo css3"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("css3")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo">
               <motion.img src={logojs} alt="logo javascript"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("javascript")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo"></div>
             <div className="logo">
               <motion.img src={logogit} alt="logo git"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("git")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo">
               <motion.img src={logoredux} alt="logo redux"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("redux")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo">
               <motion.img src={logoreact} alt="logo react"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("react")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo"></div>
             <div className="logo">
               <motion.img src={logovscode} alt="logo vscode"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("vscode")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo">
               <motion.img src={logoadobe} alt="logo adobe"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("adobe")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo">
               <motion.img src={logosass} alt="logo sass"
               whileHover={{ scale: 1.1 }} 
-              onMouseEnter={() => setHoveredLogo("figma")}
+              onMouseEnter={() => setHoveredLogo("sass")}
               onMouseLeave={() => setHoveredLogo(null)} />
             </div>
             <div className="logo"></div>

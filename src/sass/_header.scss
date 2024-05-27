@@ -66,6 +66,24 @@ header {
   display: flex;
   align-items: center;
 }
+.buttonnavbar  {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+
+}
+.buttonnavbar:hover,
+.buttonnavbar:active,
+.buttonnavbar:focus {
+background-color: $color-tertiary;
+  border-color: $color-tertiary;
+  color:$color-light;
+  font-weight: bold;
+}
 
 .mode img {
   width: 25px;
@@ -74,19 +92,20 @@ header {
 
 
 
-@media (min-width: 676px) {
+@media (min-width: 767px) {
   .menu-button {
     display: none;
   }
 
 }
 
-@media (max-width: 676px) {
+@media (max-width: 767px) {
   header {
 
     .navbar {
       justify-content: space-between;
       display: flex;
+
     }
   }
   .navbar__links {
@@ -106,6 +125,7 @@ h1{
     bottom: 0;
     height: 100vh;
     font-size: xx-large;
+
 
   }
 
@@ -133,3 +153,4 @@ h1{
     font-size: 22px;
   }
 }
+

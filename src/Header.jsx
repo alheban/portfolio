@@ -27,11 +27,13 @@ export function Header() {
     }
   };
   
-
+  const handleMailClick = () => {
+    window.location.href = "mailto:alheban@gmail.com";
+  };
 
   return (
-    <header className={`header ${isLightMode ? "light-mode" : "dark-mode"}`}>
-      <nav className={`navbar ${isLightMode ? "light-mode" : "dark-mode"}`}>
+    <header className="header">
+      <nav className="navbar">
         <div className="navbar__logo">
           <img src={logoAH} alt="logoAH" />
           <a href="#" onClick={(event) => handleLinkClick("intro", event)}><h1>Anne.Lise H</h1></a>
@@ -56,9 +58,9 @@ export function Header() {
               </a>
             </li>
             <li className="navbar__item">
-              <a href="mailto:alheban@gmail.com" className="navbar__link" onClick={handleLinkClick}>
+              <button className="buttonnavbar" onClick={handleMailClick}>
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
           <button className="mode" onClick={toggleMode}>

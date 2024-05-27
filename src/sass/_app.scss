@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-
+@import 'variables.scss';
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +10,6 @@
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-
-  color-scheme: light dark;
-  --blanc: #ffffff;
-  --darkmodecolor: #0a0a0a; //rgba(10, 10, 10, 0.95); //
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,8 +19,8 @@
 body {
   // min-width: 320px;
   min-height: 100vh;
-  background-color: var(--darkmodecolor); /* Couleur de fond par défaut */
-  color: var(--blanc); /* Couleur du texte par défaut */
+  background-color: $color-dark; /* Couleur de fond par défaut */
+  color: $color-light; /* Couleur du texte par défaut */
 }
 
 button {
@@ -62,7 +58,8 @@ button {
       transform: translateX(-50%);
       border-left: 16px solid transparent;
       border-right: 16px solid transparent;
-      border-top: 24px solid #187eff;
+      border-top: 24px solid $color-tertiary;
+      cursor: pointer;
     }
   }
   .fond_dots_light {
@@ -78,16 +75,7 @@ button {
     background-size: 22px 22px; /* Taille des points */
   }
 
-  // .fond_dots::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-
-  //   z-index: -1; /* Assurez-vous que le fond est derrière le titre */
-  // }
+ 
 }
 
 .light-mode,
@@ -95,34 +83,34 @@ button {
 .light-mode .navbar,
 .light-mode .container_projet,
 .navbar__links {
-  background-color: white;
-  color: var(--darkmodecolor);
+  background-color: $color-light;
+  color: $color-dark;
 }
 .dark-mode .title__projets {
-  border-top: 1px solid #454545;
-  border-left: 1px solid #454545;
-  border-right: 1px solid #454545;
+  border-top: 1px solid $color-border;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
   text-align: center;
 }
 .light-mode .title__projets {
-  border-top: 1px solid #dfdfdf;
-  border-left: 1px solid #dfdfdf;
-  border-right: 1px solid #dfdfdf;
+  border-top: 1px solid $color-borderL;
+  border-left: 1px solid $color-borderL;
+  border-right: 1px solid $color-borderL;
 
   text-align: center;
 }
 
 .dark-mode .projet {
-  background-color: #1a1a1a;
-  border-bottom: 1px solid #717171; /* Bordure pointillée noire */
+  background-color: $color-backgroundD;
+  border-bottom: 1px solid $color-border;
 }
 .light-mode .projet {
-  background-color: #fafafa;
-  border-bottom: 1px solid #dfdfdf; /* Bordure pointillée noire */
+  background-color: $color-backgroundL;
+  border-bottom: 1px solid $color-borderL; 
 }
 
 .light-mode .contact svg path {
-  fill: black; /* Changer la couleur au survol en violet */
+  fill: black; 
 }
 .dark-mode .logo img{
     filter: invert(100%);
@@ -146,8 +134,8 @@ button {
 .dark-mode,
 .dark-mode a,
 .dark-mode .header {
-  background-color: var(--darkmodecolor);
-  color: white;
+  background-color: $color-dark;
+  color: $color-light;
 }
 
 
@@ -187,7 +175,7 @@ h2 {
   line-height: 1.1;
   // position: relative;
   // z-index: 1;
-  background: linear-gradient(180deg, #187eff 0%, #bbd9ff 99.99%, #fff 100%);
+  background: linear-gradient(180deg, $color-tertiary 0%, #bbd9ff 99.99%, #fff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -210,9 +198,9 @@ p {
 .container_section {
   padding: 60px 20px 0;
   .section__title {
-    border-top: 1px solid #454545;
-    border-left: 1px solid #454545;
-    border-right: 1px solid #454545;
+    border-top: 1px solid $color-border;
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
     height: 60px;
     line-height: 60px;
     text-align: left;
@@ -222,7 +210,8 @@ p {
     width: auto;
   }
   .section_contenu {
-    border: 1px solid #454545;
+    border: 1px solid $color-border;
+
     padding: 20px;
     .img_profil {
       display: inline-block; /* Assurez-vous que l'image est un élément en ligne */
@@ -232,7 +221,7 @@ p {
       width: 45px;
     }
     .text_color {
-      color: #187eff;
+      color: $color-tertiary;
       font-weight: bold;
     }
   }
@@ -240,7 +229,9 @@ p {
     display: flex;
     justify-content: space-between;
     .expertise {
-      border: 1px solid #454545;
+      border-right: 1px solid $color-border;
+      border-left: 1px solid $color-border;
+      border-bottom: 1px solid $color-border;
       text-align: center;
       padding: 5px;
       font-size: 10px;
@@ -269,7 +260,7 @@ p {
   justify-items: center;
   .logo {
     height: 115px;
-    border: 1px solid #454545;
+    border: 1px solid $color-border;
     width: 100%;
     height: 100%;
     display: flex;
@@ -291,9 +282,9 @@ p {
     height: auto;
     justify-content: center;
     .section__title {
-      border-top: 1px solid #454545;
-      border-left: 1px solid #454545;
-      border-bottom: 1px solid #454545;
+      border-top: 1px solid $color-border;
+      border-left: 1px solid $color-border;
+      border-bottom: 1px solid $color-border;
       border-right: none;
       height: auto;
       padding: 20px;
@@ -301,11 +292,16 @@ p {
       margin-bottom: 0;
     }
   }
+  
 
   .container__expertise {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    .expertise {
+      border: 1px solid $color-border;
+}
+
   }
 
   .section_contenu {
@@ -340,9 +336,7 @@ p {
 
 }
 
-.light-mode .github-button img {
-  filter: invert(1);
-}
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .container_section {
@@ -360,6 +354,7 @@ p {
   .section_contenu {
     height: auto;
     width: 40%;
+
   }
   .container__expertise .expertise:first-child {
     border-left: none;
@@ -378,7 +373,7 @@ p {
     grid-template-columns: repeat(
       5,
       1fr
-    ); /* Quatre colonnes de largeur égale */
+    ); 
     grid-auto-rows: 115px; /* Utiliser la hauteur automatique en fonction du contenu */
     gap: 1px; /* Écart entre les carrés pour représenter la bordure */
     height: auto; /* Ajustez la hauteur en fonction du contenu */
@@ -396,9 +391,8 @@ p {
     grid-template-columns: repeat(
       7,
       1fr
-    ); /* Quatre colonnes de largeur égale */
+    ); 
 
   }
 
 }
-

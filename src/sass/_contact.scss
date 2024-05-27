@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .contact {
     display: flex;
     justify-content: center;
@@ -13,5 +15,5 @@
 //   font-size: 9px;
 // }
 .contact a:hover svg path {
-  fill: #187eff; /* Changer la couleur au survol en violet */
+  fill: $color-tertiary; /* Changer la couleur au survol en violet */
 }
