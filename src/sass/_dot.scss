@@ -1,0 +1,63 @@
+/* CSS pour la croix */
+@import 'variables.scss';
+.croix {
+
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* CSS pour les lignes */
+.ligne {
+  position: absolute;
+  background-color: $color-border; /* Couleur grise */
+  width: 0;
+  height: 1px; /* Pour dessiner une ligne horizontale */
+  transform-origin: left center; /* Point de rotation pour l'animation */
+}
+
+.ligne1 {
+  top: 50%;
+  left: 0;
+  animation: drawLineHorizontal 2s forwards; /* Animation pour dessiner la ligne horizontale */
+}
+
+.ligne2 {
+  top: 0;
+  left: 50%;
+  width: 1px; /* Pour dessiner une ligne verticale */
+  height: 0;
+  transform-origin: center top; /* Point de rotation pour l'animation */
+  animation: drawLineVertical 2s forwards; /* Animation pour dessiner la ligne verticale */
+}
+
+/* Définition des keyframes pour l'animation de dessin de la ligne horizontale */
+@keyframes drawLineHorizontal {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Définition des keyframes pour l'animation de dessin de la ligne verticale */
+@keyframes drawLineVertical {
+  0% { height: 0; }
+  100% { height: 100%; }
+}
+
+.croix2 {
+  width: 50px; /* Largeur de la croix */
+  height: 50px; /* Hauteur de la croix */
+  border-top: 1px dotted #454545; /* Trait horizontal du haut */
+  border-bottom: 1px dotted #454545; /* Trait horizontal du bas */
+  border-left: 1px dotted #454545; /* Trait vertical gauche */
+  border-right: 1px dotted #454545; /* Trait vertical droite */
+}
+
+
+.svg-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -1; /* Le SVG doit avoir un z-index inférieur au titre pour apparaître en arrière-plan */
+}
+
