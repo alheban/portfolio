@@ -5,7 +5,7 @@ function Contact() {
         <>
             <div className="contact">
                 <motion.a
-                    href="https://www.github.com" target="_blank"
+                    href="https://github.com/alheban/" target="_blank"
                     whileHover={{ scale: 1.1 }} // Grossissement au survol
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Transition fluide
                 >
@@ -14,7 +14,7 @@ function Contact() {
                     </svg>
                 </motion.a>
                 <motion.a
-                    href="https://www.linkedin.com" target="_blank"
+                    href="linkedin.com/in/anne-lise-heban-44b86a50" target="_blank"
                     whileHover={{ scale: 1.1 }} // Grossissement au survol
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Transition fluide
                 >
@@ -23,7 +23,7 @@ function Contact() {
                     </svg>
                 </motion.a>
                 <motion.a
-                    href="mailto:example@gmail.com"
+                    href="mailto:alheban@gmail.com"
                     whileHover={{ scale: 1.1 }} // Grossissement au survol
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Transition fluide
                 >
