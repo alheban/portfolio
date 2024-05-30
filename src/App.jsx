@@ -102,7 +102,7 @@ function App() {
           <h3 className="section__title">
             Qui suis-je ?{" "}
             <motion.div className="svg-container" initial={{ rotate: 0 }}
-                animate={competencesInView ? "visible" : "hidden"}
+                animate={quiInView ? "visible" : "hidden"}
                 variants={{
                   hidden: { opacity: 0.2, y: 40 },
                   visible: { opacity: 0.5, rotate: 0 },
@@ -285,11 +285,11 @@ function App() {
           <h3 className="section__title">
             compétences{" "}
             <motion.div className="svg-container"
-            initial={{ rotate: 0 }}
+            initial={{y: 0}}
             animate={competencesInView ? "visible" : "hidden"}
             variants={{
               hidden: { opacity: 0.2, y: 60 },
-              visible: { opacity: 0.5, rotate: 0 },
+              visible: { opacity: 0.5,}
             }}
             transition={{ duration: 0.5 }}>
               
@@ -443,6 +443,7 @@ function App() {
                 }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ rotate: 360 }}
+                whileTap={{ rotate: 360 }}
               >
                 <svg
                   width="50px"
@@ -498,6 +499,7 @@ function App() {
                 }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ rotate: 360 }}
+                whileTap={{ rotate: 360 }}
               >
                 <svg
                   width="50px"
@@ -558,6 +560,7 @@ function App() {
                 }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ rotate: 360 }}
+                whileTap={{ rotate: 360 }}
               >
                 <svg
                   width="50px"
@@ -626,6 +629,7 @@ function App() {
                 }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ rotate: 360 }}
+                whileTap={{ rotate: 360 }}
               >
                 <svg
                   width="50px"
@@ -673,6 +677,7 @@ function App() {
                 }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ rotate: 360 }}
+                whileTap={{ rotate: 360 }}
               >
                 <svg
                   width="50px"
