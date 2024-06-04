@@ -153,7 +153,7 @@ function App() {
                   height="22.9524"
                   transform="matrix(0.928056 -0.372442 0.362555 0.931962 86.229 166.393)"
                   fill="#6AA9F8"
-                  fill-opacity="0.31"
+                  fillOpacity="0.31"
                 />
                 <rect
                   width="9.89881"
@@ -336,7 +336,7 @@ function App() {
                   height="22.9524"
                   transform="matrix(0.928056 -0.372442 0.362555 0.931962 86.229 166.393)"
                   fill="#6AA9F8"
-                  fill-opacity="0.31"
+                  fillOpacity="0.31"
                 />
                 <rect
                   width="9.89881"

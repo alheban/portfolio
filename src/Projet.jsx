@@ -13,13 +13,7 @@ function Projet({ projet }) {
   const y1 = useTransform(scrollY, [offsetTop - 300, offsetTop + 300], [0, 0]);
   const y2 = useTransform(scrollY, [offsetTop - 300, offsetTop + 300], [0, 0]);
 
-  useEffect(() => {
-    if (isLightMode) {
-      document.body.classList.add("light-mode");
-    } else {
-      document.body.classList.remove("light-mode");
-    }
-  }, [isLightMode]);
+
 
   return (
     <div ref={ref} className={`projet ${isLightMode ? "light-mode" : "dark-mode"}`}>

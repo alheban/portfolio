@@ -4,15 +4,7 @@ import { useTheme } from "./ThemeContext";
 import Contact from "./Contact";
 
 function Footer() {
-    const { isLightMode, toggleMode } = useTheme();
-
-    useEffect(() => {
-      if (isLightMode) {
-        document.body.classList.add("light-mode");
-      } else {
-        document.body.classList.remove("light-mode");
-      }
-    }, [isLightMode]);
+    
   return (
     <>
   <Contact></Contact>
