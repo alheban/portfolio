@@ -14,7 +14,7 @@ function Contact() {
                     </svg>
                 </motion.a>
                 <motion.a
-                    href="ttps://linkedin.com/in/anne-lise-heban-44b86a50" target="_blank"
+                    href="https://linkedin.com/in/anne-lise-heban-44b86a50" target="_blank"
                     whileHover={{ scale: 1.1 }} // Grossissement au survol
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Transition fluide
                 >
